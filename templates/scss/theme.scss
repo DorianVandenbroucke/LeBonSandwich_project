@@ -1,4 +1,65 @@
 
-.right_section{
-  display: none;
+@import "variables.scss";
+
+@media screen and (min-width: 25em){
+
+  .content h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+  form{
+
+    select{
+      height: 30px;
+      border: none;
+      border-bottom: 1px solid $thirdColor;
+      margin: 5px 0;
+      color: $fontColor;
+    }
+
+  }
+
+  header{
+    background-color: $fontColor;
+    text-align: center;
+    padding: 10px;
+    div{
+      color: lighten($fontColor, 80);
+      font-size: 2em;
+      margin-left: 0!important;
+      span{
+        color: $secondColor;
+      }
+    }
+  }
+
+  .menu{
+    border-bottom: 1px solid $secondColor;
+    margin: 0;
+    padding: 5px 0;
+    ul{
+      margin-left: 0!important;
+    }
+  }
+
+  .left_section{
+
+    div:last-child{
+      text-align: center;
+    }
+    select{
+      width: 100%;
+    }
+
+  }
+
+  .right_section{
+    display: none;
+  }
+
 }

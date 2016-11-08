@@ -3,31 +3,31 @@
 	<head>
 		<title>LeBonSandwich: Composer votre sandwich</title>
 		<meta charset="UTF-8" />
-		<link rel="stylesheet" type="text/css" href="http://dorianv.fr/test/vandenbr3u_library/css/theme.css" />
+		<link rel="stylesheet" type="text/css" href="templates/vandenbr3u_library/css/theme.css" />
+		<link rel="stylesheet" type="text/css" href="templates/css/theme.css" />
 	</head>
 
 <body class="grid_float">
 
-	<header>
-		<div class="row">
-			<h1 class="offset_1">LeBonSandwich</h1>
-		</div>
-		<div class="row">
-			<ul class="offset_1 navbar">
-				<li><a href="accueil">Accueil</a></li>
-				<li><a href="ingredient">Ingrédients</a></li>
-				<li><a href="sandwich">Sandwich</a></li>
-				<li><a href="composer_sandwich">Composer</a></li>
-				<li><a href="commande">Commande</a></li>
-				<li><a href="contact">Contact</a></li>
-			</ul>
-		</div>
+	<header class="row">
+		<div class="offset_1">Le<span>Bon</span>Sandwich</div>
 	</header>
 
+	<div class="row menu">
+		<ul class="offset_1 navbar column_4">
+			<li><a href="accueil">Accueil</a></li>
+			<li><a href="ingredient">Ingrédients</a></li>
+			<li><a href="sandwich">Sandwich</a></li>
+			<li><a href="composer_sandwich">Composer</a></li>
+			<li><a href="commande">Commande</a></li>
+			<li><a href="contact">Contact</a></li>
+		</ul>
+	</div>
 
-	<section class="row">
 
-	<section class="offset_1 column_4">
+	<section class="row content">
+
+	<section class="offset_1 column_6 left_section">
 		<h1 class="row">Composer votre sandwich</h1>
 		<form>
 			<select>
@@ -62,13 +62,20 @@
 			</select>
 			<div>
 				<b>Vos crudités:</b> (x0.10£)
+				<br />
 				<input type="checkbox">Tomates</input>
+				<br />
 				<input type="checkbox">Oignons</input>
+				<br />
 				<input type="checkbox">Maïs</input>
+				<br />
 				<input type="checkbox">Laitue</input>
+				<br />
 				<input type="checkbox">Choux</input>
 			</div>
-			<button type="submit">Valider</button>
+			<div class="row">
+				<button class="yellow-btn" type="submit">Valider</button>
+			</div>
 		</form>
 	</section>
 
