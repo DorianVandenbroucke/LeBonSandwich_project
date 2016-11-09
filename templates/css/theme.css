@@ -1,42 +1,60 @@
-@media screen and (min-width: 25em) {
-  .content h1 {
+body {
+  background-color: #efefef; }
+
+footer {
+  background-color: #242424;
+  padding: 10px 0;
+  border-top: 3px solid #ca9b07; }
+  footer .social_network img {
+    width: 50px; }
+    footer .social_network img:hover {
+      opacity: 0.7; }
+
+header {
+  background-color: #242424;
+  text-align: center;
+  padding: 10px 0; }
+  header div {
+    color: #d7d7d7;
+    font-size: 2em; }
+    header div span {
+      color: #ca9b07; }
+
+.menu {
+  border-bottom: 1px solid #ca9b07;
+  background-color: #ffffff;
+  margin: 0; }
+
+.content {
+  padding: 50px 0; }
+  .content h1, .content h2 {
     text-align: center;
     margin-bottom: 20px; }
-
-  footer {
-    text-align: center; }
-
-  form select {
+  .content form div {
+    margin-top: 20px; }
+    .content form div:last-child {
+      text-align: center; }
+  .content form select {
     height: 30px;
     border: none;
     border-bottom: 1px solid #898989;
-    margin: 5px 0;
-    color: #242424; }
+    color: #242424;
+    margin-top: 50px; }
+  .content .right_section {
+    display: none; }
+    .content .right_section div {
+      margin: 50px 0; }
+      .content .right_section div ul {
+        padding-left: 10px; }
+      .content .right_section div h3 {
+        margin-bottom: 10px;
+        text-align: center; }
+  .content section {
+    background-color: #ffffff;
+    border: 1px solid #d6d6d6; }
 
-  header {
-    background-color: #242424;
-    text-align: center;
-    padding: 10px; }
-    header div {
-      color: #f0f0f0;
-      font-size: 2em;
-      margin-left: 0 !important; }
-      header div span {
-        color: #ca9b07; }
-
-  .menu {
-    border-bottom: 1px solid #ca9b07;
-    margin: 0;
-    padding: 5px 0; }
-    .menu ul {
-      margin-left: 0 !important; }
-
-  .left_section div:last-child {
-    text-align: center; }
-  .left_section select {
-    width: 100%; }
-
-  .right_section {
-    display: none; } }
+@media screen and (min-width: 70em) {
+  .content .right_section {
+    display: block; } }
 
 /*# sourceMappingURL=theme.css.map */

@@ -10,58 +10,61 @@
 <body class="grid_float">
 
 	<header class="row">
-		<div class="offset_1">Le<span>Bon</span>Sandwich</div>
+		<div>Le<span>Bon</span>Sandwich</div>
 	</header>
 
 	<div class="row menu">
-		<ul class="offset_1 navbar column_4">
+		<ul class="navbar">
 			<li><a href="accueil">Accueil</a></li>
 			<li><a href="ingredient">Ingrédients</a></li>
 			<li><a href="sandwich">Sandwich</a></li>
-			<li><a href="composer_sandwich">Composer</a></li>
+			<li><a class="active" href="composer_sandwich">Composer</a></li>
 			<li><a href="commande">Commande</a></li>
 			<li><a href="contact">Contact</a></li>
 		</ul>
 	</div>
 
 
-	<section class="row content">
+	<section class="row content offset_1 column_6">
 
-	<section class="offset_1 column_6 left_section">
+	<section class="column_4 left_section">
 		<h1 class="row">Composer votre sandwich</h1>
 		<form>
-			<select>
-				<option>Votre pain:</option>
-				<option>Complet</option>
-				<option>Sans croûte</option>
-				<option>Blé</option>
-				<option>Wrapp</option>
-				<option>Sans</option>
-			</select>
-			<select>
-				<option>Votre viande:</option>
-				<option>Boeuf</option>
-				<option>Jambon</option>
-				<option>Thon</option>
-				<option>Sans</option>
-			</select>
-			<select>
-				<option>Votre sauce:</option>
-				<option>Mayonnaise</option>
-				<option>Blanche</option>
-				<option>Ketchup</option>
-				<option>Tomate</option>
-				<option>sans</option>
-			</select>
-			<select>
-				<option>Choisissez un petit supplément:</option>
-				<option>Bacon</option>
-				<option>Ketchup</option>
-				<option>Cornichons</option>
-				<option>sans</option>
-			</select>
+			<div class="row">
+				<select class="column_3">
+					<option>Votre pain:</option>
+					<option>Complet</option>
+					<option>Sans croûte</option>
+					<option>Blé</option>
+					<option>Wrapp</option>
+					<option>Sans</option>
+				</select>
+				<select class="column_3 offset_1">
+					<option>Votre viande:</option>
+					<option>Boeuf</option>
+					<option>Jambon</option>
+					<option>Thon</option>
+					<option>Sans</option>
+				</select>
+				<select class="column_3">
+					<option>Votre sauce:</option>
+					<option>Mayonnaise</option>
+					<option>Blanche</option>
+					<option>Ketchup</option>
+					<option>Tomate</option>
+					<option>sans</option>
+				</select>
+				<select class="column_3 offset_1">
+					<option>Votre petit supplément:</option>
+					<option>Bacon</option>
+					<option>Ketchup</option>
+					<option>Cornichons</option>
+					<option>sans</option>
+				</select>
+			</div>
 			<div>
 				<b>Vos crudités:</b> (x0.10£)
+				<br />
 				<br />
 				<input type="checkbox">Tomates</input>
 				<br />
@@ -79,24 +82,26 @@
 		</form>
 	</section>
 
-	<section class="offset_1 column_2 right_section">
+	<section class="offset_1 column_3 right_section">
 		<h2>Derniers sandwichs composés</h2>
 		<div>
-			<ul>
-				<li>Pain: complet</li>
-				<li>Viande: boeuf</li>
-				<li>Sauce: blanche</li>
-				<li>Suplément: bacon</li>
-				<li>Crudités: tomates, laitue, oignons</li>
+			<h3 class="column_8 small-text-title">Hamburger classique supplément bacon</h3>
+			<ul class="list-style-square">
+				<li><b>Pain:</b> complet</li>
+				<li><b>Viande:</b> boeuf</li>
+				<li><b>Sauce:</b> blanche</li>
+				<li><b>Suplément:</b> bacon</li>
+				<li><b>Crudités:</b> tomates, laitue, oignons</li>
 			</ul>
 		</div>
 		<div>
-			<ul>
-				<li>Pain: complet</li>
-				<li>Viande: boeuf</li>
-				<li>Sauce: blanche</li>
-				<li>Suplément: bacon</li>
-				<li>Crudités: tomates, laitue, oignons</li>
+			<h3 class="column_8 small-text-title">Hamburger classique supplément bacon</h3>
+			<ul class="list-style-square">
+				<li><b>Pain:</b> complet</li>
+				<li><b>Viande:</b> boeuf</li>
+				<li><b>Sauce:</b> blanche</li>
+				<li><b>Suplément:</b> bacon</li>
+				<li><b>Crudités:</b> tomates, laitue, oignons</li>
 			</ul>
 		</div>
 	</section>
@@ -104,9 +109,17 @@
 	</section>
 
 	<footer>
-		<div>Site officiel LeBonSandwich ©</div>
-		<a href="contact.html">Nous contacter</a>
-		<div>
+		<div class="row">
+			<div class="offset_1 column_3">
+				<p>Site officiel LeBonSandwich ©</p>
+				<a href="">Nous contacter</a>
+			</div>
+			<div class="social_network offset_1 column_3">
+				<a href=""><img src="templates/vandenbr3u_library/components/images/social_network_facebook.png"></img></a>
+				<a href=""><img src="templates/vandenbr3u_library/components/images/social_network_twitter.png"></img></a>
+				<a href=""><img src="templates/vandenbr3u_library/components/images/social_network_instagram.png"></img></a>
+				<a href=""><img src="templates/vandenbr3u_library/components/images/social_network_pinterest.png"></img></a>
+			</div>
 		</div>
 	</footer>
 
