@@ -1,5 +1,6 @@
 
 @import "variables.scss";
+@import "image.scss";
 
 body{
 	background-color: #efefef;
@@ -76,12 +77,29 @@ header{
 		}
 	}
 
+	.right_section_pub{
+		@extend .right_section;
+		div {
+			margin: 5px 0;
+		}
+	}
+
 	section{
 		background-color: #ffffff;
 		border: 1px solid #d6d6d6;
 	}
 
 }
+
+// .left_section_ingre div section div div{
+// 	border: 1px solid #d6d6d6;
+// 	&:hover{
+// 		background: #d6d6d6;
+// 	}
+// 	img{
+// 		height: 270px;
+// 	}
+// }
 
 @media screen and (min-width: 70em){
 
