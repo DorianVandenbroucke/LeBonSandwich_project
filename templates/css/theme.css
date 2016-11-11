@@ -28,6 +28,9 @@ div.desc {
 body {
   background-color: #efefef; }
 
+.breadcrumb {
+  margin-bottom: 20px; }
+
 footer {
   background-color: #242424;
   padding: 10px 0;
@@ -69,18 +72,38 @@ header {
     margin-top: 50px; }
   .content .right_section, .content .right_section_pub {
     display: none; }
-    .content .right_section div, .content .right_section_pub div {
+    .content .right_section.composer_sandwich div, .content .composer_sandwich.right_section_pub div {
       margin: 50px 0; }
-      .content .right_section div ul, .content .right_section_pub div ul {
+      .content .right_section.composer_sandwich div ul, .content .composer_sandwich.right_section_pub div ul {
         padding-left: 10px; }
-      .content .right_section div h3, .content .right_section_pub div h3 {
+      .content .right_section.composer_sandwich div h3, .content .composer_sandwich.right_section_pub div h3 {
         margin-bottom: 10px;
         text-align: center; }
+    .content .right_section.modifier_commande, .content .modifier_commande.right_section_pub {
+      text-align: center; }
+      .content .right_section.modifier_commande > div, .content .modifier_commande.right_section_pub > div {
+        margin: 10px 5px;
+        padding: 20px 0;
+        border-bottom: 1px solid #d6d6d6;
+        border-top: 1px solid #d6d6d6; }
   .content .right_section_pub div {
     margin: 5px 0; }
   .content section {
     background-color: #ffffff;
     border: 1px solid #d6d6d6; }
+
+.left_section.modifier_commande > div button {
+  margin-top: 20px; }
+.left_section.modifier_commande section {
+  margin-top: 10px;
+  padding: 5px; }
+  .left_section.modifier_commande section ul {
+    margin-top: 30px;
+    margin-left: 0; }
+    .left_section.modifier_commande section ul input {
+      margin-left: 10px; }
+    .left_section.modifier_commande section ul li {
+      margin-top: 5px; }
 
 @media screen and (min-width: 70em) {
   .content .right_section, .content .right_section_pub {
