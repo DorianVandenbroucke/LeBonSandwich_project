@@ -110,6 +110,8 @@ footer {
       margin-left: 10px; }
     .left_section.modifier_commande section ul li {
       margin-top: 5px; }
+  .left_section.modifier_commande section .aliments_manquants {
+    color: red; }
 
 @media screen and (min-width: 70em) {
   body {

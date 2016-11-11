@@ -36,6 +36,16 @@
 
 	<section class="column_4 left_section modifier_commande">
 		<h1 class="row">Modifier votre commande</h1>
+		
+		<div class="row warning-alert">
+			<strong>Ingrédients manquant !</strong>
+			<p>
+				Nous sommes en rupture de stocke concernant les ingrédients suivants: Maïs, Mayonnaise.
+				<br />
+				Veuillez modifier votre commande en conséquence.
+			</p>
+		</div>
+		
 		<div class="row">
 			<section class="column_4">
 				<h4 class="row">Sandwich 1: <small>Supplément bacon</small></h3>
@@ -63,8 +73,8 @@
 					<li class="row">
 						<b class="column_3">Sauce: </b>
 						<select class="column_5">
+							<option class="aliments_manquants">Mayonnaise</option>
 							<option>Blanche</option>
-							<option>Mayonnaise</option>
 							<option>Ketchup</option>
 							<option>Tomate</option>
 							<option>Sans</option>
@@ -86,7 +96,7 @@
 						<br />
 						<input type="checkbox" checked>Oignons</input>
 						<br />
-						<input type="checkbox">Maïs</input>
+						<input class="aliments_manquants" type="checkbox" checked><del>Maïs</del></input>
 						<br />
 						<input type="checkbox" checked>Laitue</input>
 						<br />
@@ -219,6 +229,12 @@
 				<div class="row">
 					<button type="submit" class="yellow-btn extra-large-btn">Modifier</button>
 				</div>
+			</section>
+		</div>
+		<div class="row">
+			<section class="column_4 offset_2">
+				<strong>Etat de votre commande:</strong>
+				<p>En cours de préparation</p>
 			</section>
 		</div>
 		<div class="row">
