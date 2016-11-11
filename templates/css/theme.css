@@ -55,6 +55,12 @@ header {
   background-color: #ffffff;
   margin: 0; }
 
+body {
+  margin-bottom: 140px; }
+
+footer {
+  height: 140px; }
+
 .content {
   padding: 50px 0; }
   .content h1, .content h2 {
@@ -106,6 +112,12 @@ header {
       margin-top: 5px; }
 
 @media screen and (min-width: 70em) {
+  body {
+    margin-bottom: 80px; }
+
+  footer {
+    height: 80px; }
+
   .content .right_section, .content .right_section_pub {
     display: block; } }
 
