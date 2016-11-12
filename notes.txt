@@ -1,3 +1,0 @@
-http://dorianv.fr/test/index.html
-
-/!\ Footer pas à la bonne taille pour mobiles
